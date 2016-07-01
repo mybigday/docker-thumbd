@@ -5,7 +5,7 @@
 ## Usage
 
 ```bash
-$ docker run -d --name thumbd --env-file=.env fucompany/thumbd
+$ docker run -d -p 5959:5959 --name thumbd --env-file=.env fucompany/thumbd
 ```
 
 The `.env` file is your configuration ([.env.default](.env.default)), see [this documentation](https://github.com/bcoe/thumbd#setup) for more information.
