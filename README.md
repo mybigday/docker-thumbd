@@ -5,7 +5,7 @@
 ## Usage
 
 ```bash
-$ docker run -d --name thumbd --env-file=.env mybigday/thumbd
+$ docker run -d --name thumbd --env-file=.env fucompany/thumbd
 ```
 
 The `.env` file is your configuration ([.env.default](.env.default)), see [this documentation](https://github.com/bcoe/thumbd#setup) for more information.
@@ -13,7 +13,7 @@ The `.env` file is your configuration ([.env.default](.env.default)), see [this 
 ## Build
 
 ```bash
-$ docker build --rm -t mybigday/thumbd .
+$ docker build --rm -t fucompany/thumbd .
 ```
 
 ## LICENSE

@@ -1,7 +1,7 @@
 # VERSION 1.0
 # AUTHOR:         Jhen <developer@jhen.me>
 # DESCRIPTION:    Thumbd image based on mhart/alpine-node
-# TO_BUILD:       docker build --rm -t mybigday/thumbd .
+# TO_BUILD:       docker build --rm -t fucompany/thumbd .
 # SOURCE:         https://github.com/mybigday/docker-thumbd
 FROM mhart/alpine-node:6
 MAINTAINER Jhen <developer@jhen.me>
