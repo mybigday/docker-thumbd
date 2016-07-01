@@ -1,0 +1,14 @@
+FROM mhart/alpine-node:6
+
+# Install imagemagick & thumbd
+RUN apk update
+RUN apk add imagemagick git
+RUN npm set registry https://registry.npmjs.org
+RUN git clone https://github.com/bcoe/thumbd.git /thumbd && \
+    cd /thumbd && \
+    # 2.19.0
+    git checkout 6ccaf55485797b0ad775b9630fb053e6f8470219
+WORKDIR /thumbd
+RUN npm i
+
+CMD ["npm", "test"]
